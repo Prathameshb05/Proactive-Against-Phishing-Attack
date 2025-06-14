@@ -1,0 +1,250 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.column {
+    float: left;
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* On screens that are 600px or wider, make the column take up 50% of the width */
+@media screen and (min-width: 600px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* On screens that are 900px or wider, make the column take up 25% of the width */
+@media screen and (min-width: 900px) {
+    .column {
+        width: 25%;
+    }
+}
+
+img {
+    border-radius: 50%;
+    /* Make the image circular */
+    object-fit: cover;
+    /* Crop the image to fit the container */
+    width: 100%;
+    /* Make the image fill its container */
+    height: 20%;
+    /* Keep the image's aspect ratio */
+}
+
+/* animation on the card class*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(16, 6, 6, 0.96);
+    margin: 28px;
+    background-color:black;
+    width: 85%;
+    border-radius: 25px;
+    /* Add rounded corners to the card */
+    animation: fadeIn 2s ease-in-out;
+}
+
+.about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #033616;
+    color: rgb(221, 234, 225);
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.h2{
+color: white;
+}
+
+.title {
+    color:white;
+    font-family: sans-serif;
+}
+
+.circle-image {
+    border-radius: 50%;
+    width: 50px;
+    height: 170px;
+    margin-left: 1.5cm;
+    margin-top: 2cm;
+    border: 3px solid #cadbd0;
+    /* Add this line */
+}
+
+/* Navigation bar */
+#navbar {
+    background: white;
+    color: rgb(13, 26, 38);
+    position: fixed;
+    top: 0;
+    height: 55px;
+    line-height: 60px;
+    width: 100vw;
+    z-index: 10;
+}
+
+.nav-wrapper {
+    margin: auto;
+    text-align: right;
+    width: 80%;
+}
+
+@media(max-width: 768px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
+
+@media(max-width: 638px) {
+    .nav-wrapper {
+        width: 100%;
+    }
+}
+
+
+.logo {
+    float: left;
+    margin-left: -90px;
+    font-size: 1.5em;
+    height: 30px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 50px;
+    /* Adjust the width of the logo container as needed */
+    height: 50px;
+    /* Adjust the height of the logo container as needed */
+    border-radius: 50%;
+    /* Make the logo container circular */
+    overflow: hidden;
+    /* Ensure the image stays within the circular container */
+}
+
+.logo img {
+    width: 100%;
+    /* Ensure the image fills the circular container */
+    height: auto;
+    display: block;
+    /* Remove extra space beneath the image */
+}
+
+#navbar ul {
+    display: inline-block;
+
+    #navbar ul {
+        float: right;
+        list-style: none;
+        /* margin-right: 14px; */
+        margin-top: -2px;
+        text-align: right;
+        transition: transform 0.5s ease-out;
+        -webkit-transition: transform 0.5s ease-out;
+    }
+}
+
+@media(max-width: 640px) {
+    #navbar ul {
+        display: none;
+    }
+}
+
+@media(orientation: landscape) {
+    #navbar ul {
+        display: inline-block;
+    }
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar li a {
+    color: rgb(13, 26, 38);
+    display: block;
+    font-size: 1.1em;
+    height: 50px;
+    letter-spacing: 1px;
+    margin: 0 20px;
+    padding: 0 4px;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+
+#navbar li a:hover {
+    /* border-bottom: 1px solid rgb(28, 121, 184); */
+    color: rgb(28, 121, 184);
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+/* Animated Bottom Line */
+#navbar li a:before,
+#navbar li a:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: -1px;
+    background: rgb(13, 26, 38);
+}
+
+#navbar li a:before {
+    left: 0;
+    transition: 0.5s;
+}
+
+#navbar li a:after {
+    background: rgb(13, 26, 38);
+    right: 0;
+    /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+
+#navbar li a:hover:before {
+    background: rgb(13, 26, 38);
+    width: 100%;
+    transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+#navbar li a:hover:after {
+    background: transparent;
+    width: 100%;
+    /* transition: 0s; */
+}

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  CSS  --------------------->
+    <link rel="stylesheet" href="sms.css">
+    <title>SMS</title>
+</head>
+
+<body>
+    <!------Navigatio Bar ------->
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+                <!-- Logo Placeholder for Illustration -->
+                <a href="../home/home.html">
+                    <img width="100px" height="auto"
+                        src="../images/logo.jpg">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../info/info.html">information</a></li>
+                <li><a href="../about/about.html">about us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!------Form ------->
+
+    <div class="content-container">
+        <div class="form-container" style="border: 2px solid rgb(160, 157, 157); padding: 50px; margin: 20px;">
+            <form id="myForm">
+                <label for="email_content" style="font-family: Comic Sans MS; color:rgb(5, 58, 5)">Enter SMS text
+                </label>
+                <br>
+                <input type="text" id="userInput" placeholder="Enter your text here">
+                <button type="button" class="send-button" onclick="sendData()">Send</button>
+            </form>
+            <br>
+
+
+            <!-- Add a new element to display the output -->
+            <div id="output"></div>
+
+            <!-- Include the JavaScript file -->
+            <script src="./sms.js"></script>
+        </div>
+    </div>
+
+
+    <!----- Text ------>
+
+    <p class="info-paragraph">
+    <h1 style="color:white; font-family: Comic Sans MS; margin-left: 1cm; font-size: 30px"> SMS PHISHING
+        INFORMATION
+    </h1><br><br>
+    <p>Smishing is a social engineering attack that uses fake mobile text messages to trick people into downloading
+        malware,
+        sharing sensitive information, or sending money to cybercriminals. The term “smishing” is a combination of
+        “SMS”—or
+        “short message service,” the technology behind text messages—and “phishing.”
+        With smishing, cybercriminals use a text message to try to get potential victims to give out personal
+        information. The
+        text message, which typically contains a link to a fake website that looks identical to the legitimate site,
+        asks the
+        recipient to enter personal information. Fake information is often used to make the texts appear to be from
+        a legitimate
+        organization or business.
+
+        Smishing has grown in popularity with cybercriminals now that smartphones are widely used, as it enables
+        them to steal
+        sensitive financial and personal information without having to break through the security defenses of a
+        computer or
+        network. Public awareness about phishing, smishing and other attacks continues to grow, as many incidents
+        are reported
+        on in the news.
+    </p><br><br>
+
+
+    <h1 style="color:white; font-family: Comic Sans MS; margin-left: 4cm; font-size: 25px"> Example </h1>
+    <br>
+    <br>
+    <br>
+    <!-- Images with 8cm margin on both sides -->
+    <div class="images">
+        <img src="sms_1.jpg" alt="Image 1">
+    </div>
+
+
+    <p style="color:white;">
+        Smishing attacks are similar to other types of phishing attacks, in which scammers use phony messages and
+        malicious
+        links to fool people into compromising their mobile phones, bank accounts, or personal data. The only main
+        difference is
+        the medium. In smishing attacks, scammers use SMS or messaging apps to conduct their cybercrimes rather than
+        emails or
+        phone calls.
+
+        Scammers choose smishing over other types of phishing attacks for various reasons. Perhaps most importantly,
+        research
+        shows that people are likelier to click links in text messages. Klaviyo reports that SMS click-through rates
+        hover
+        between 8.9 percent and 14.5 percent (link resides outside ibm.com). By comparison, emails have an average
+        click rate of
+        only 1.33 percent, according to Constant Contact (link resides outside ibm.com).</p>
+    <br>
+    <br>
+    <h1 style="color:white; font-family: Comic Sans MS; margin-left: 4cm; font-size: 25px"> Example </h1>
+    <br>
+    <br>
+    <div class="images">
+        <img src="sms_2.jpg" alt="Image 2">
+    </div> <br> <br>
+    </p>
+
+
+    <!-- Centered YouTube video with 8cm margin on each side -->
+    <div class="warning">
+        <h1 style="color: rgb(182, 184, 181);">Watch This Video for Essential Safety Tips. </h1>
+    </div>
+
+    <br>
+    <!-- Centered YouTube video with 8cm margin on each side-->
+    <div class="video-container">
+        <video controls>
+            <source src="sms_video.mp4" type="video/mp4">works
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <br>
+</body>
+
+
+</html>

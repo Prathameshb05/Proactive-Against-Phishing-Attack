@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!---------------  CSS  --------------------->
+    <link rel="stylesheet" href="email.css">
+    <title>Email</title>
+    <!---------------  IONICONS  --------------------->
+
+</head>
+
+<body>
+    <!------Navigation Bar ------->
+    <nav id="navbar" class="">
+        <div class="nav-wrapper">
+            <!-- Navbar Logo -->
+            <div class="logo">
+                <!-- Logo Placeholder for Illustration -->
+                <a href="../home/home.html">
+                    <img width="100px" height="auto" src="../images/logo.jpg">
+                </a>
+            </div>
+
+            <!-- Navbar Links -->
+            <ul id="menu">
+                <li><a href="../home/home.html">Home</a></li>
+                <li><a href="../info/info.html">Information</a></li>
+                <li><a href="../about/about.html">About Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!------Form ------->
+
+    <div class="content-container">
+        <div class="form-container" style="border: 2px solid rgb(202, 137, 137); padding: 50px; margin: 20px;">
+            <form id="myForm">
+                <label for="email_content" style="font-family: Comic Sans MS; color:rgb(5, 58, 5)">Enter Mail-ID
+                </label>
+                <br>
+                <input type="text" id="userInput" placeholder="Enter your address here">
+
+                <label for="email_content" style="font-family: Comic Sans MS; color:rgb(5, 58, 5); ">Enter Description
+                </label>
+                <br>
+                <input type="text" id="userInput" placeholder="Enter your contents here">
+                <button type="button" class="send-button" onclick="sendData()">Send</button>
+            </form>
+
+            <!-- Add a new element to display the output -->
+            <br>
+            <br>
+
+            <div id="output"></div>
+
+            <!-- Include the JavaScript file -->
+            <script src="./email.js"></script>
+        </div>
+    </div>
+
+    <!------ Paragraph------->
+
+    <br>
+    <p class="info-paragraph">
+    <h1 style="color:white; font-family: Comic Sans MS; margin-left: 1cm; font-size: 30px"> E-MAIL PHISHING
+        INFORMATION
+    </h1><br><br>
+    <p>Email phishing is a malicious online activity that involves the use of deceptive
+        emails
+        to trick recipients
+        into taking
+        actions that can compromise their security, personal information, or financial assets. Phishers send
+        emails
+        that appear
+        to be from trusted sources, such as banks, government agencies, or well-known companies. These emails
+        often
+        use official
+        logos, branding, and email addresses that mimic the legitimate organization. Phishing emails use
+        psychological
+        manipulation techniques to create a sense of urgency or fear, telling recipients that their account will
+        be
+        suspended,
+        that they have won a prize, or that they need to verify personal information.
+
+        These deceptive emails often contain links that lead to fake websites designed to steal login
+        credentials or
+        personal
+        information, or they may come with malicious attachments that can infect a recipients computer with
+        malware. Phishers
+        may use email addresses that appear similar to legitimate ones but have subtle differences,
+        impersonating
+        well-known
+        organizations to add credibility to their messages.
+    </p><br><br>
+
+
+    <h1 style="color:white; font-family: Comic Sans MS; margin-left: 4cm; font-size: 25px"> Example </h1>
+    <br>
+    <br>
+    <br>
+    <!-- Images with 8cm margin on both sides -->
+    <div class="images">
+        <img src="email_1.jpg" alt="Image 1">
+    </div>
+
+
+    <p style="color:white;">
+        The ultimate goal of email phishing is to steal sensitive information, including usernames, passwords,
+        credit
+        card details, and social security numbers. Once they have this data, phishers can engage in identity
+        theft,
+        financial fraud, or unauthorized access to accounts. Phishing attacks can be broad, targeting a large
+        number
+        of
+        individuals,
+        or highly targeted, focusing on specific individuals or organizations.
+
+        To protect themselves from email phishing, users should be cautious about clicking on links or
+        downloading
+        attachments in emails. They should verify the senders email address, look for signs of phishing, such
+        as
+        misspelled words or odd requests, and use email filtering and security software. Reporting phishing
+        emails
+        to
+        email service
+        providers or impersonated organizations is also essential in combating these threats.</p>
+    <br>
+    <br>
+    <h1 style="color:white; font-family: Comic Sans MS; margin-left: 4cm; font-size: 25px"> Example </h1>
+    <br>
+    <br>
+    <div class="images">
+        <img src="email_2.jpg" alt="Image 2">
+    </div> <br> <br>
+
+
+    <!-- Centered YouTube video with 8cm margin on each side -->
+    <div class="warning">
+        <h1 style="color: rgb(182, 184, 181);">Watch This Video for Essential Safety Tips. </h1>
+    </div>
+
+    <br>
+    <!-- Centered YouTube video with 8cm margin on each side-->
+    <div class="video-container">
+        <video controls>
+            <source src="../email/email_video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <br>
+</body>
+
+</html>
